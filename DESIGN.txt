@@ -1,0 +1,16 @@
+General Details:
+This web server runs on port 8080. 
+Web Server is single threaded assuming that only one request will be served at a time. 
+Web Server list down all directories and file from root location.
+Directories can be further drilled down to sub-directories.
+If its file then file content will be displayed on browser.
+
+Improvements which can be done:
+1. Third party logging libraries can be used to generate log files instead of putting logs to
+   console.
+2. Currently code assumes that there will be no spaces between files or directories name.
+   This code further needs to be enhanced to handle situations like that.
+3. Further enhancement needs to be done to handle situation where listed file is not 
+   allowed\authorized to be read.
+4. Further testing needs to be done on different platforms like Windows, Linux, Mac etc
+5. Further testing needs to be done different browsers to make sure UI works properly.
